@@ -1,8 +1,81 @@
-﻿
-namespace Demo
+﻿namespace Demo
 {
     internal class Program
     {
+        #region DoSomeCode()
+        //static void DoSomeCode()
+        //{
+        //try
+        //{
+        //    int x, y, z;
+        //    x = int.Parse(Console.ReadLine());
+        //    y = int.Parse(Console.ReadLine());
+        //    z = x / y;
+        //    int[] arr = { 1, 2, 3, 4, };
+        //    arr[99] = 16;
+        //}
+        //catch (FormatException ex) 
+        //{
+        //    Console.WriteLine(ex.Message);
+
+        //}
+        //catch(DivideByZeroException x)
+        //{
+        //    Console.WriteLine(x.Message);
+        //}
+        //catch(IndexOutOfRangeException e){
+        //    Console.WriteLine(e.Message);
+        //}
+        //====================================
+        //catch (Exception ex) 
+        //{
+        //    Console.WriteLine(ex);
+        //} 
+        //finally
+        //{
+        //  Console.WriteLine("any thing");
+        //}
+        // finally for 1. Release 2.Deallocate 3.Disconnect 4.Dispose  ==> for unmanaged resource(database or data in files)
+        #endregion
+        #region DoSomeProtectiveCode()
+        //static void DoSomeProtectiveCode()
+        //{
+        //    int X, Y, Z;
+        //    bool flag;
+        //    try
+        //    {
+        //        do
+        //        {
+        //            Console.WriteLine("enter first num : ");
+        //            flag = int.TryParse(Console.ReadLine(), out X);
+        //        }
+        //        while (flag == false);
+        //        do
+        //        {
+        //            Console.WriteLine("enter sec num : ");
+        //            flag = int.TryParse(Console.ReadLine(), out Y);
+        //        }
+        //        while (flag == false || Y == 0);
+
+        //        Z = X / Y;
+        //        Console.WriteLine(Z);
+
+        //        int[] arr = { 1, 2, 3, 4, 5, 6 };
+
+        //        if (arr?.Length >= 99)
+        //        {
+        //            Console.WriteLine(arr[99] = 66);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //    }
+            
+
+        //}
+
+        #endregion
         static void Main(string[] args)
         {
             #region Boxing & UnBoxing
@@ -125,11 +198,25 @@ namespace Demo
             //int? len = arr?.Length;
             //int len = arr?.Length is not null ? arr.Length : 0;
             //int len = arr?.Length ?? 0;
-            
+
             //Console.WriteLine(len);
             #endregion
-
+            #region Exception Handling & Protective code
+            //  DoSomeCode();
+            // ==================builtin class (exception)====================
+            // 1. SystemException.
+            //1.1 formatException.
+            //1.2 IndexOutOfRangeException.
+            //1.3 NullReferenceException.
+            //1.4 ArithmeticException.
+            //1.4.1 OverflowException.
+            //1.4.2 DivideByZeroException.
+            // 2. ApplicationException. 
+            //======================================Handling=========================
+            //DoSomeProtectiveCode();
+            #endregion
 
         }
-    }
+
+    } 
 }
