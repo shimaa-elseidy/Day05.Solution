@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using Classlibrary;
+
+namespace Demo
 {
     internal class Program
     {
@@ -215,7 +217,13 @@
             //======================================Handling=========================
             //DoSomeProtectiveCode();
             #endregion
+            #region Access Modifiers
+            TypeB typeB = new TypeB();
+            //typeB.x = 12;// In-Valid
+            //typeB.y = 13;//In-Valid
+            //typeB.Z = 14;//valid
 
+            #endregion
         }
 
     } 
