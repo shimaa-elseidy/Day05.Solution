@@ -84,8 +84,16 @@ namespace Demo
             //============================
             //     Null Coalescing Operator ==>??
             // y = x ?? 0; // syntax sugar from y = x is not null ? x.Value : 0;
-           // Console.WriteLine(y);
+            // Console.WriteLine(y);
 
+            #endregion
+            #region Nullable Reference type
+            // c# 10 .net 6
+            // default value of ref is null
+            // string   Name = null;//Required
+            //string? Name02 = null;//Nullable optional
+            //Console.WriteLine(Name.Length);
+            //Console.WriteLine(Name02.Length);
             #endregion
 
 
