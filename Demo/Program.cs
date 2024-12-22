@@ -95,6 +95,39 @@ namespace Demo
             //Console.WriteLine(Name.Length);
             //Console.WriteLine(Name02.Length);
             #endregion
+            #region Null Propagation Operator ?
+            //double x = default; //0
+            //Console.WriteLine(x);
+            //char x = default;// space
+            //Console.WriteLine(x);
+
+            //=====default value of ref type = null
+            //int[] arr = default;//null
+            //int[] arr = { 1, 2, 5 };
+            //for (int i = 0; arr is not null &&i < arr.Length; i++)
+            //{
+            //    Console.WriteLine(arr[i]);
+            //}
+
+            /// best practice 
+            //if (arr is not null )
+            //{
+            //    for (int i = 0; i < arr.Length; i++)
+            //    {
+            //        Console.WriteLine(arr[i]);
+            //    }
+            //} 
+            //for (int i = 0; i < arr?.Length; i++)
+            //{
+            //    Console.WriteLine(arr[i]);
+            //}
+
+            //int? len = arr?.Length;
+            //int len = arr?.Length is not null ? arr.Length : 0;
+            //int len = arr?.Length ?? 0;
+            
+            //Console.WriteLine(len);
+            #endregion
 
 
         }
