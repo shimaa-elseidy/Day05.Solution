@@ -1,4 +1,6 @@
-﻿namespace Assignment05
+﻿using System.Security;
+
+namespace Assignment05
 {
     #region Enum Q01
     //public enum WeekDays
@@ -21,8 +23,32 @@
     //    Winter
     //}
     #endregion
+    #region Enum03
+    //[Flags]
+    //public enum Permissions
+    //{
+    //    none=0,
+    //    Read=8, 
+    //    write=4, 
+    //    Delete=2, 
+    //    Execute=1
+    //}
+    #endregion
     internal class Program
     {
+        #region Permission fn
+        //static void CheckPermission(Permissions userPermissions, Permissions permissionToCheck)
+        //{ 
+        //    if (userPermissions.HasFlag(permissionToCheck))
+        //    {
+        //        Console.WriteLine($"{permissionToCheck}  permission exists.");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine($"{permissionToCheck} permission does not exist.");
+        //    }
+        //}
+        #endregion
         static void Main(string[] args)
         {
 
@@ -41,7 +67,7 @@
             ///=======================Another Solution========================================
             //foreach (WeekDays day in Enum.GetValues(typeof(WeekDays)))
             //{
-             //   Console.WriteLine(day);
+            //   Console.WriteLine(day);
             //}
             #endregion
             #region Q02
@@ -81,6 +107,30 @@
             //{
             //    Console.WriteLine("Invalid input. Please enter a valid season name.");
             //}
+            #endregion
+            #region Q03
+            /* 4- Assign the following Permissions (Read, write, Delete, Execute) in a form of Enum.
+                  Create Variable from previous Enum to Add and Remove Permission from variable, 
+                  check if specific Permission is existed inside variable.
+            */
+            //Permissions permissions = Permissions.none;
+
+            //permissions |= Permissions.Read;     
+            //permissions |= Permissions.write;    
+            //permissions |= Permissions.Delete;  
+            //permissions |= Permissions.Execute;  
+            //Console.WriteLine("Current Permissions: " + permissions);
+
+            // Check for specific permission  
+            //CheckPermission( permissions, Permissions.Read);     
+            //CheckPermission( permissions,Permissions.Delete);
+
+            // Remove permission  
+            //permissions &= ~ Permissions.write; // Remove Write permission  
+            //Console.WriteLine("Current Permissions after removal: " + permissions);
+
+            //after removal  
+            //CheckPermission(permissions, Permissions.write); //false  
             #endregion
 
         }
