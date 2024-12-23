@@ -73,11 +73,36 @@ namespace Demo
         //    {
         //        Console.WriteLine(ex.Message);
         //    }
-            
+
 
         //}
 
         #endregion
+        //public enum Season
+        //{
+        //    spring,
+        //    winter,
+        //    autumn,
+        //    summer
+        //}
+        //public enum days : byte
+        //{
+        //    //byte  0====>255
+        //    sat,
+        //    sun,
+        //    mon,
+        //    Tues,
+        //    wed,
+        //    thr,
+        //    fri=255
+        //}
+        //public enum gender 
+        //{
+        //    m     =1,
+        //    f     =2,
+        //    male  =1,
+        //    female=2
+        //}
         static void Main(string[] args)
         {
             #region Boxing & UnBoxing
@@ -218,11 +243,30 @@ namespace Demo
             //DoSomeProtectiveCode();
             #endregion
             #region Access Modifiers
-            TypeB typeB = new TypeB();
+            //TypeB typeB = new TypeB();
             //typeB.x = 12;// In-Valid
             //typeB.y = 13;//In-Valid
             //typeB.Z = 14;//valid
 
+            #endregion
+            #region Enum
+            // Value type  ==> for constant value or specific value
+            //Season season = Season.autumn;
+            //season=Season.winter;
+            //Console.WriteLine(season);
+
+            ///days days = days.fri;
+            //Console.WriteLine((int)days);
+
+            //gender gender = (gender) 1; //Explicit convert
+            //gender G01 = (gender)Enum.Parse(typeof (gender) , Console.ReadLine() ,true);
+            //gender G01;
+            //Enum.TryParse(typeof(gender), Console.ReadLine(), true,out object o1);
+            
+            //G01 = (gender)o1;
+            //Console.WriteLine(G01);
+            // Stack
+            // CLR represent Enum As Integer Value In Memory
             #endregion
         }
 

@@ -55,16 +55,16 @@ namespace Classlibrary
 
     // Default Access Modifier into interface is public.
     //=============================================================
-    class TypeA
-        {
-            void fn01()
-            {
-                TypeB typeB = new TypeB();
+    //class TypeA
+    //    {
+    //        void fn01()
+    //        {
+    //            TypeB typeB = new TypeB();
             
-            //typeB.x = 12;//In-Valid
-            typeB.y = 13;//Valid
-            typeB.Z = 14;//Valid
-        }
-        }
+    //        //typeB.x = 12;//In-Valid
+    //        typeB.y = 13;//Valid
+    //        typeB.Z = 14;//Valid
+    //    }
+    //    }
     }
 
