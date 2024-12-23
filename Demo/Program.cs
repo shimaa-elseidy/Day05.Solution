@@ -34,6 +34,14 @@ namespace Assignment05
     //    Execute=1
     //}
     #endregion
+    #region Enum04
+    //public enum Colors
+    //{
+    //    Red, 
+    //    Green, 
+    //    Blue
+    //}
+    #endregion
     internal class Program
     {
         #region Permission fn
@@ -131,6 +139,41 @@ namespace Assignment05
 
             //after removal  
             //CheckPermission(permissions, Permissions.write); //false  
+            #endregion
+            #region Q04
+            /*
+             5. Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members. 
+                Write a C# program that takes a color name as input from the user and displays a message 
+                indicating whether the input color is a primary color or not.
+             */
+           // Console.WriteLine("Enter Color Name (Red, Green, Blue):");
+           // string input = Console.ReadLine();
+
+            //if (Enum.TryParse(typeof(Colors), input, true, out var color))
+            //{
+            //    Console.WriteLine($"{input} is a primary color.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{input} is not a primary color.");
+            //}
+            //==============another solution===========================================================
+            //if (Enum.TryParse(input, true, out Colors InputColor))
+            //{
+            //    if (InputColor==Colors.Green | InputColor ==Colors.Red | InputColor == Colors.Blue )
+            //    {
+            //        Console.WriteLine($"{InputColor} Is a Primary color");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{InputColor} Isn't a Primary color");
+            //    }
+            //}
+            //else
+            //{
+
+            //    Console.WriteLine("Enter Valid Color");
+            //}
             #endregion
 
         }
