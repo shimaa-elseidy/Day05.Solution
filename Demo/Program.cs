@@ -78,6 +78,7 @@ namespace Demo
         //}
 
         #endregion
+        #region Enum01
         //public enum Season
         //{
         //    spring,
@@ -103,6 +104,19 @@ namespace Demo
         //    male  =1,
         //    female=2
         //}
+        #endregion
+        #region Enum02
+        //[Flags]
+        // read - write - execute - delete
+        //public enum permissions
+        //{
+        //    read=8,
+        //    write=4,
+        //    execute=2,
+        //    delete =1
+            
+        //}
+        #endregion
         static void Main(string[] args)
         {
             #region Boxing & UnBoxing
@@ -262,11 +276,31 @@ namespace Demo
             //gender G01 = (gender)Enum.Parse(typeof (gender) , Console.ReadLine() ,true);
             //gender G01;
             //Enum.TryParse(typeof(gender), Console.ReadLine(), true,out object o1);
-            
+
             //G01 = (gender)o1;
             //Console.WriteLine(G01);
             // Stack
             // CLR represent Enum As Integer Value In Memory
+            #endregion
+            #region Enum02
+            //permissions per01 = permissions.read;
+            //per01 ^= permissions.delete;// toggle
+            //per01 |= permissions.delete;  // add permissions
+
+            //Console.WriteLine(per01);
+            //per01 |= permissions.delete;
+            //Console.WriteLine(per01);
+            //Console.WriteLine(per01);
+            //per01 &=~(permissions.delete);// ~ (delta) not bitwise 
+            // & to check permissions
+            //if ((per01&permissions.delete) == (permissions.delete))
+            //{
+            //    Console.WriteLine("Exists");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not Exists");
+            //}
             #endregion
         }
 
